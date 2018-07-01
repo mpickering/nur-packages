@@ -1,4 +1,4 @@
-{ }:
+{ callPackage }:
 {
-  overlays = { haskell-plugins = import ./haskell-plugins ;};
+  overlays = { haskell-plugins = callPackage ./haskell-plugins {} ;};
 }
